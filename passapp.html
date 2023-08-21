@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="passapp.css">
+</head>
+<body >
+  <canvas id="scribbleCanvas" width="700" height="600"></canvas>
+  <button id="generateButton">finished</button>
+  <div id="combinedValue"></div>
+    <div class="container">
+        <h1 class="txt">Password Generator</h1>
+        <div class="options">
+            <label>
+                <input type="checkbox" id="includeUppercase">
+                Include Uppercase Letters
+            </label>
+            <label>
+                <input type="checkbox" id="includeNumbers">
+                Include Numbers
+            </label>
+            <label>
+                <input type="checkbox" id="includeSymbols">
+                Include Symbols
+            </label>
+            <label>
+                Password Length:
+                <input type="number" id="passwordLength" value="12" min="6" max="50">
+            </label>
+        </div>
+        <button id="generateBtn">Generate Password</button>
+        <div class="password" id="passwordDisplay">Your generated password will appear here.</div>
+        <button id="copyBtn">Copy to Clipboard</button>
+        <div class="strength" id="passwordStrength">Password Strength: </div>
+    </div>
+    <h1 class="txt1">Draw inside the above box  </h1>
+    <script src="passapp.js"></script>
+</body>
+</html>
+
